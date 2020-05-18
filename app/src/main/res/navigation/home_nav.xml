@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/fragment_home">
+    <fragment android:name="com.drinkwaater.oilcollector.HomeFragment"
+        android:id="@+id/fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/navigation_home_to_bot1"
+            app:destination="@id/fragmnet_bot1"/>
+        <action
+            android:id="@+id/navigation_home_to_bot2"
+            app:destination="@id/fragmnet_bot2"/>
+        <action
+            android:id="@+id/navigation_home_to_bot3"
+            app:destination="@id/fragmnet_bot3"/>
+        <action
+            android:id="@+id/navigation_home_to_bot4"
+            app:destination="@id/fragmnet_bot4"/>
+    </fragment>
+    <fragment android:name="com.drinkwaater.oilcollector.Bot1Fragment"
+        android:id="@+id/fragmnet_bot1"
+        tools:layout="@layout/fragment_bot1">
+        <action android:id="@+id/navigation_bot1_to_home"
+            app:destination="@id/fragment_home"/>
+    </fragment>
+    <fragment android:name="com.drinkwaater.oilcollector.Bot2Fragment"
+        android:id="@+id/fragmnet_bot2"
+        tools:layout="@layout/fragment_bot2">
+        <action android:id="@+id/navigation_bot2_to_home"
+            app:destination="@id/fragment_home"/>
+    </fragment>
+    <fragment android:name="com.drinkwaater.oilcollector.Bot3Fragment"
+        android:id="@+id/fragmnet_bot3"
+        tools:layout="@layout/fragment_bot3">
+        <action android:id="@+id/navigation_bot3_to_home"
+            app:destination="@id/fragment_home"/>
+    </fragment>
+    <fragment android:name="com.drinkwaater.oilcollector.Bot4Fragment"
+        android:id="@+id/fragmnet_bot4"
+        tools:layout="@layout/fragment_bot4">
+        <action android:id="@+id/navigation_bot4_to_home"
+            app:destination="@id/fragment_home"/>
+    </fragment>
+
+
+</navigation>
